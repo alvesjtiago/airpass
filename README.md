@@ -19,7 +19,6 @@ npm start
 ## Credits
 
 Project created by [Tiago Alves](http://tiagoalves.me).
-Icon inspired by Setyo Ari Wibowo work.
 
 ## License
 
