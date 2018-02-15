@@ -1,0 +1,28 @@
+{
+  "name": "Airpass",
+  "version": "1.0.0",
+  "description": "Renew MAC address to access time constrained wifi networks in airports.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . Airpass --platform=darwin --version=0.0.1 --out=./dist --overwrite --icon='assets/images/icon.icns'",
+    "dmg": "electron-installer-dmg ./dist/Airpass-darwin-x64/Airpass.app Airpass --out=./dist --overwrite --icon='assets/images/icon.icns'"
+  },
+  "keywords": [
+    "wifi",
+    "airport",
+    "mac",
+    "address"
+  ],
+  "author": "Tiago Alves",
+  "license": "MIT License",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-installer-dmg": "^0.2.1",
+    "electron-rebuild": "^1.7.3"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "sudo-prompt": "^8.1.0"
+  }
+}
