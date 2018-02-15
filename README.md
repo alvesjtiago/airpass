@@ -1,6 +1,12 @@
+![Airpass icon](https://user-images.githubusercontent.com/407470/36247877-281b38a2-1268-11e8-8a11-016df1abd6e9.png)
 # Airpass 
 
-App to renew MAC address to access time constrained wifi networks in airports.
+Are you tired of WiFi networks that only let you access for 30 mins? Do you wish you had more time?
+
+The solution is **Airpass** - a status bar Mac app to overcome time constrained WiFi networks.
+
+* Click to renew your MAC address and trick the network 🤖
+* Right click to close 🔌
 
 ## Downloads
 
