@@ -4,7 +4,7 @@ App to renew MAC address to access time constrained wifi networks in airports.
 
 ## Downloads
 
-### [OSX](https://github.com/alvesjtiago/airpass/releases/tag/v1.0.0)
+### [OSX](https://github.com/alvesjtiago/airpass/releases/tag/1.0.0)
 
 ## Building from source
 
