@@ -17,17 +17,25 @@ app.on('ready', function(){
   
   // Menu bar icon
   appIcon = new Tray(path.join(__dirname, '/assets/images/iconTemplate.png'));
+  const contextMenu = Menu.buildFromTemplate([
+    { 
+      label: 'Refresh MAC address...', 
+      type: 'normal',
+      click: function(event) { renewMacAddress() }
+    },
+    {
+      label: 'Quit', 
+      type: 'normal', 
+      click: function(event) { app.quit(); }
+    }
+  ]);
+  appIcon.setToolTip('Airpass');
+  appIcon.setContextMenu(contextMenu);
 
   // Hide dock menu
   app.dock.hide();
 
-  // Quit app on right click event
-  appIcon.on('right-click', function(event, files) {
-    app.quit();
-  });
-  
-  // Renew MAC address on click event
-  appIcon.on('click', function(event, files) {
+  function renewMacAddress() {
     let notification = new Notification({
       title: 'Changing MAC adddress 🤖',
       body: 'Please input your password when requested to make the necessary changes.',
@@ -62,5 +70,5 @@ app.on('ready', function(){
         }
       }
     );
-  });
+  }
 });
