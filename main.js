@@ -29,8 +29,9 @@ app.on('ready', function(){
   // Renew MAC address on click event
   appIcon.on('click', function(event, files) {
     let notification = new Notification({
-      title: 'Tricking the network 🤖',
-      body: 'Please input your password when requested to make the necessary changes.'
+      title: 'Changing MAC adddress 🤖',
+      body: 'Please input your password when requested to make the necessary changes.',
+      silent: true
     })
     notification.show();
 
@@ -42,16 +43,22 @@ app.on('ready', function(){
       function(error, stdout, stderr) {
         if (!error) {
           let notification = new Notification({
-            title: 'All done 👌',
-            body: 'Join the network again for free wi-fi 📡'
+            title: 'MAC address changed 👌',
+            body: 'Connect to the network again to start a new session 📡',
+            silent: true
           })
           notification.show();
         } else {
+          let issues_url = "https://github.com/alvesjtiago/airpass/issues"
           let notification = new Notification({
-            title: 'Something went wrong 😞',
-            body: 'Plese try again.'
+            title: 'Could not refresh MAC address',
+            body: 'Please check ' + issues_url + ' for help.',
+            silent: true
           })
           notification.show();
+          notification.on('click', function(event) {
+            shell.openExternal(issues_url)
+          })
         }
       }
     );
