@@ -1,6 +1,6 @@
 {
   "name": "Airpass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Renew MAC address to access time constrained wifi networks in airports.",
   "main": "main.js",
   "scripts": {
