@@ -14,7 +14,7 @@ The solution is **Airpass** - a status bar Mac app to overcome time constrained 
 
 ## Downloads
 
-### [OSX](https://github.com/alvesjtiago/airpass/releases/tag/1.0.0)
+### [OSX](https://github.com/alvesjtiago/airpass/releases/tag/1.0.1)
 
 ## Building from source
 
