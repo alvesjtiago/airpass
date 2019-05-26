@@ -17,12 +17,12 @@
   "author": "Tiago Alves",
   "license": "MIT License",
   "devDependencies": {
-    "electron": "~1.7.8",
+    "electron": "^1.7.16",
     "electron-installer-dmg": "^0.2.1",
-    "electron-rebuild": "^1.7.3"
+    "electron-rebuild": "^1.8.5"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
-    "sudo-prompt": "^8.1.0"
+    "sudo-prompt": "^8.2.5"
   }
 }
