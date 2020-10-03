@@ -10,8 +10,7 @@ Are you tired of WiFi networks that only let you access for 30 mins? Do you wish
 
 The solution is **Airpass** - a status bar Mac app to overcome time constrained WiFi networks.
 
-- Click to renew your MAC address and trick the network 🤖
-- Right click to close 🔌
+- One-click to renew your MAC address and trick the network 🤖
 
 ## Downloads
 

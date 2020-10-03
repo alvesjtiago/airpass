@@ -4,9 +4,9 @@
   "description": "Renew MAC address to access time constrained wifi networks in airports.",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "package": "electron-packager . Airpass --platform=darwin --version=0.0.1 --out=./dist --overwrite --icon='assets/images/icon.icns'",
-    "dmg": "electron-installer-dmg ./dist/Airpass-darwin-x64/Airpass.app Airpass --out=./dist --overwrite --icon='assets/images/icon.icns'"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [
     "wifi",
@@ -17,9 +17,12 @@
   "author": "Tiago Alves",
   "license": "MIT License",
   "devDependencies": {
-    "electron": ">=1.8.2-beta5",
-    "electron-installer-dmg": "^0.2.1",
-    "electron-rebuild": "^1.8.5"
+    "@electron-forge/cli": "^6.0.0-beta.53",
+    "@electron-forge/maker-deb": "6.0.0-beta.47",
+    "@electron-forge/maker-rpm": "6.0.0-beta.47",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.47",
+    "@electron-forge/maker-zip": "6.0.0-beta.47",
+    "electron": ">=7.2.4"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
