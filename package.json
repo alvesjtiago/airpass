@@ -1,6 +1,6 @@
 {
   "name": "airpass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Renew MAC address to access time constrained wifi networks in airports.",
   "main": "main.js",
   "scripts": {
@@ -17,15 +17,36 @@
   "author": "Tiago Alves",
   "license": "MIT License",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.53",
-    "@electron-forge/maker-deb": "6.0.0-beta.47",
-    "@electron-forge/maker-rpm": "6.0.0-beta.47",
-    "@electron-forge/maker-squirrel": "6.0.0-beta.47",
-    "@electron-forge/maker-zip": "6.0.0-beta.47",
-    "electron": ">=10.2.0"
+    "@electron-forge/cli": "^6.0.0-beta.66",
+    "@electron-forge/maker-deb": "6.0.0-beta.66",
+    "@electron-forge/maker-rpm": "6.0.0-beta.66",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.66",
+    "@electron-forge/maker-zip": "6.0.0-beta.66",
+    "@electron-forge/maker-dmg": "6.0.0-beta.66",
+    "node-abi": "2.30.1",
+    "electron": "^11.0.1"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
     "sudo-prompt": "^8.2.5"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "arch": ["x64", "arm64"],
+        "icon": "./assets/images/icon"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-dmg"
+        }
+      ]
+    }
   }
 }

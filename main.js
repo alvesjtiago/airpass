@@ -47,7 +47,7 @@ app.on('ready', function(){
     var options = {
       name: 'Airpass'
     };
-    sudo.exec("ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`", options,
+    sudo.exec("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en0 -z && ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'`", options,
       function(error, stdout, stderr) {
         if (!error) {
           let notification = new Notification({
