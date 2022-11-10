@@ -24,7 +24,7 @@
     "@electron-forge/maker-zip": "6.0.0-beta.66",
     "@electron-forge/maker-dmg": "6.0.0-beta.66",
     "node-abi": "2.30.1",
-    "electron": "^11.0.1"
+    "electron": "^18.3.7"
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
